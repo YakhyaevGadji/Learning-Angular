@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-basics';
+  
+
+  func(event: any) {
+    this.title = event.target.value += 'hello';
+  }
+
 }
